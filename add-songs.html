@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Songs - YouTube Music Clone</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .form-container {
+            background-color: #181818;
+            padding: 20px;
+            border-radius: 10px;
+            width: 400px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .form-container h2 {
+            text-align: center;
+            color: #ff5252;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #282828;
+            color: white;
+            font-size: 14px;
+        }
+
+        .form-group input[type="file"] {
+            padding: 5px;
+        }
+
+        .form-group input:focus, .form-group select:focus {
+            outline: 2px solid #ff5252;
+        }
+
+        .form-group button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #ff5252;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .form-group button:hover {
+            background-color: #ff7575;
+        }
+
+        .form-group a {
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+            color: #ccc;
+            text-decoration: none;
+        }
+
+        .form-group a:hover {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Add a New Song</h2>
+        <form id="add-song-form">
+            <div class="form-group">
+                <label for="song-title">Song Title:</label>
+                <input type="text" id="song-title" name="song-title" placeholder="Enter song title" required>
+            </div>
+            <div class="form-group">
+                <label for="artist-name">Artist Name:</label>
+                <input type="text" id="artist-name" name="artist-name" placeholder="Enter artist name" required>
+            </div>
+            <div class="form-group">
+                <label for="song-language">Language:</label>
+                <select id="song-language" name="song-language" required>
+                    <option value="Telugu">Telugu</option>
+                    <option value="Hindi">Hindi</option>
+                    <option value="English">English</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="album-cover">Album Cover:</label>
+                <input type="file" id="album-cover" name="album-cover" accept="image/*">
+            </div>
+            <div class="form-group">
+                <button type="submit">Add Song</button>
+            </div>
+            <div class="form-group">
+                <a href="youtube-music-clone.html">Back to Home</a>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('add-song-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            const title = document.getElementById('song-title').value;
+            const artist = document.getElementById('artist-name').value;
+            const language = document.getElementById('song-language').value;
+            const cover = document.getElementById('album-cover').files[0];
+
+            console.log("Song Added:");
+            console.log("Title:", title);
+            console.log("Artist:", artist);
+            console.log("Language:", language);
+            console.log("Cover File:", cover ? cover.name : "No file uploaded");
+
+            alert("Song added successfully!");
+            this.reset();
+        });
+    </script>
+</body>
+</html>

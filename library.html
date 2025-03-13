@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Playlists and Audio Library</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #000; /* Set background to black */
+            color: #fff; /* Set text color to white */
+        }
+        h1 {
+            text-align: center;
+            color: #fff; /* White text for the title */
+        }
+        .playlist-container, .audio-library {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        .playlist, .audio {
+            margin: 10px;
+            padding: 15px;
+            background-color: #222; /* Dark background for the cards */
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            width: 280px;
+            text-align: center;
+        }
+        .playlist img, .audio img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .playlist a, .audio a {
+            display: block;
+            margin-top: 10px;
+            color: #1E90FF; /* Blue color for the links */
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .playlist a:hover, .audio a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>YouTube Playlists and Audio Library</h1>
+
+    <div class="playlist-container">
+        <div class="playlist">
+            <img src="https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da8481d47bd820592b9931f5c65e" alt="Playlist 1">
+            <h2> Telugu Playlist</h2>
+            <a href="https://www.youtube.com/watch?v=Q4iuEbdJNhs&list=RDQ4iuEbdJNhs&start_radio=1" target="_blank">View Playlist</a>
+        </div>
+        <div class="playlist">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgYABMyNvD3I5APAl2UVTrma0p9uSKIw3fow&s" alt="Playlist 2">
+            <h2> Hindi Playlist</h2>
+            <a href="https://www.youtube.com/watch?v=f8duCjoEDXY&list=RDGMEM_6azG-gbwFIpRtH6PATXiQVMf8duCjoEDXY&start_radio=1" target="_blank">View Playlist</a>
+        </div>
+        <div class="playlist">
+            <img src="https://c.saavncdn.com/044/Top-Devotional-Mantra-Collection-Sanskrit-2018-20180906-500x500.jpg" alt="Playlist 2">
+            <h2> Devotional Playlist</h2>
+            <a href="https://www.youtube.com/watch?v=CGAO7NqtZKQ&list=RDCGAO7NqtZKQ&start_radio=1&rv=CGAO7NqtZKQ" target="_blank">View Playlist</a>
+        </div>
+        <!-- Add more playlists as needed -->
+    </div>
+
+    <h2>Explore the YouTube Audio Library</h2>
+    <div class="audio-library">
+        <div class="audio">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfXXTHmS2Q1qAuaBv60_QiJZ_Ov04vRez2gg&s" alt="Audio Track 1">
+            <h3>Puthiyoru Lokam</h3>
+            <a href="https://youtu.be/lZL2K3ewRYM?list=RDlZL2K3ewRYM" target="_blank">Listen to Audio</a>
+        </div>
+        <div class="audio">
+            <img src="https://c.saavncdn.com/000/Vinaro-Bhagyamu-Vishnu-Katha-Telugu-2022-20230217150407-500x500.jpg" alt="Audio Track 2">
+            <h3>Vaasava Suhaasa</h3>
+            <a href="https://youtu.be/k8v9ivdG48Y?list=RDlZL2K3ewRYM" target="_blank">Listen to Audio</a>
+        </div>
+        <div class="audio">
+            <img src="https://akm-img-a-in.tosshub.com/indiatoday/styles/medium_crop_simple/public/2024-11/saveclip.app_465504324_1002155378339158_3714050044149023672_n.jpg?VersionId=s7kcabalygUqtKgIDau2YaVQDDG4RUt1&size=750:*" alt="Audio Track 2">
+            <h3>Sahiba (Music Video) </h3>
+            <a href="https://youtu.be/NW6Dgax2d6I?list=RDlZL2K3ewRYM" target="_blank">Listen to Audio</a>
+        </div>
+        <div class="audio">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn_iwAsZ9ZNcTYt9WC5znz6qHfzE3PmcovTA&s" alt="Audio Track 2">
+            <h3>Leo - Ordinary Person Video</h3>
+            <a href="https://youtu.be/q6e_b0NERCA?list=RDlZL2K3ewRYM" target="_blank">Listen to Audio</a>
+        </div>
+        <div class="audio">
+            <img src="https://i.scdn.co/image/ab67616d00001e021669ffcdd56f8465ac060864" alt="Audio Track 2">
+            <h3>sirivennela </h3>
+            <a href="https://youtu.be/m2kU2b9PYcs?list=RDlZL2K3ewRYM" target="_blank">Listen to Audio</a>
+        </div>
+        <!-- Add more audio tracks if necessary -->
+    </div>
+
+</body>
+</html>
